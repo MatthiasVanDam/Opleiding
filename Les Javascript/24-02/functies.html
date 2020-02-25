@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functies</title>
+</head>
+
+<body>
+    <!--     <button onclick="vraagNaam()">Klik hier</button>
+    <script>
+        function vraagNaam() {
+            var naam = prompt("Wat is u naam?", "Andrea")
+            document.write("Hallo " + naam)
+
+
+        }
+    </script> -->
+
+    <!--     <script>
+        function eersteCharacter() {
+            var naam = "JavaScript"
+            var antwoord = naam.charAt(0)
+            document.write(naam + " : het eerste karakter is: " + antwoord)
+        }
+        eersteCharacter()
+    </script> -->
+
+    <!--     <script>
+        var fles = "water";
+
+        function grenadineToevoegen(opvangContainer) { /* voeg grenadine toe aan de opvangContainer; */
+            document.write("grenadine is toegevoegd aan het " + opvangContainer);
+        }
+        grenadineToevoegen(fles);
+    </script> -->
+
+    <!--     <script>
+        function groet(naam) {
+            document.write("<br>Goedendag, " + naam + "<p>Alles goed met de kinderen " + naam);
+        }
+        groet("Fred");
+        groet("Ann");
+    </script> -->
+
+    <!--     <script>
+        function eersteCharacter(naam) {
+            document.write("<br>" + naam.charAt(0))
+        }
+
+        eersteCharacter("Javascript");
+        eersteCharacter("html");
+        eersteCharacter("css");
+    </script> -->
+
+    <!--     <script>
+        function hoofdletters(tekst) {
+            document.write("<br>" + tekst.toUpperCase())
+        }
+        hoofdletters("Javascript")
+        hoofdletters("css")
+    </script> -->
+
+    <!--     <script>
+        var namen = new Array("Jan", "Piet", "Joris")
+
+        function toonArray(ontvangen) {
+            document.write(ontvangen)
+        }
+
+        toonArray(namen)
+    </script> -->
+
+    <!--     <script>
+        var namen = new Array("Jan", "Piet", "Joris")
+        var dieren = new Array("Hond", "Kat", "Paard")
+
+        function toonArray(ontvangen) {
+            document.write("<br>" + ontvangen[0])
+        }
+
+        toonArray(namen);
+        toonArray(dieren)
+    </script> -->
+
+    <!--     <script>
+        function schrijf(ontvangen) {
+            document.write(ontvangen);
+        }
+        schrijf("Nu moet ik niet meer zoveel code intikken");
+    </script> -->
+
+    <!--     <script>
+        function verdubbelen(input) {
+            var output = input * 2;
+            return output;
+        }
+        var getal = 5;
+        var uitkomst = verdubbelen(getal);
+        document.write("<br>" + getal + " geeft " + uitkomst + " na bewerking");
+    </script> -->
+
+    <!--     <script>
+        function product(nr1, nr2, nr3) {
+            var resultaat = nr1 * nr2 * nr3
+            return resultaat
+        }
+        var score = product(3, 4, 5)
+        document.write("Het product is: " + score)
+    </script> -->
+
+    <!--     <script>
+        function kwadraat(input) {
+            var output = input * input;
+            return output;
+        }
+        var getal = 5;
+        var uitkomst = kwadraat(getal);
+        document.write("<br>" + getal + " geeft " + uitkomst + " na bewerking");
+    </script> -->
+
+    <!--     <script>
+        var persoon1 = ["Jan", "man"];
+        var persoon2 = ["Hilde", "vrouw"];
+
+        function haalAanspreektitelOp(geslacht) {
+            var aanspreektitel = " ";
+            if(geslacht === man){
+                aanspreekTitel ="meneer"
+            } else {
+                aanspreekTitel = "mevrouw"
+            } return aanspreekTitel
+
+        }
+        document.write("Hallo " + haalAanspreektitelop(persoon1[1])+" "+ persoon1[0]);
+        document.write("Hallo " + haalAanspreektitelop(persoon2[1])+" "+ persoon2[0]);
+    </script> -->
+
+    <!--     <script>
+        function dagOmzetten(datum) {
+            console.log(datum);
+            var maanden = new Array("januari", "februari", "maart", "april", "mei", "juni", "juli", "augustus", "september", "oktober", "november", "december");
+            var weekdag = new Array("zondag", "maandag", "dinsdag", "woensdag", "donderdag", "vrijdag", "zaterdag");
+
+            return (weekdag[datum.getDay()] + " " + datum.getDate() + " " + maanden[datum.getMonth()] + " " + datum.getFullYear());
+
+        }
+
+        function telDagenVerder(aantalDagen) {
+            var dag = 86400000;
+            var nieuweDatum = Date.now() + (dag * aantalDagen);
+            nieuweDatum = new Date(nieuweDatum);
+            var omgezetteDatum = dagOmzetten(nieuweDatum);
+            return omgezetteDatum;
+
+        }
+        var dagenVerder = prompt("Hoeveel dagen wil je verder tellen?");
+        document.write("Het is vandaag " + dagOmzetten(new Date()) + ". Binnen " + dagenVerder + " dagen is het " + telDagenVerder(dagenVerder) + ".");
+    </script> -->
+
+
+</body>
+
+
+</html>

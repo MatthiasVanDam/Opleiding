@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var palet = new Array('geel', 'groen', 'blauw', 'zwart', 'rood');
+        /* palet[0] = prompt('Geef een kleur in', "Geel");
+        palet[1] = prompt('Geef een kleur in', "Groen");
+        palet[2] = prompt('Geef een kleur in', "Blauw");
+        palet[3] = prompt('Geef een kleur in', "Zwart");
+        palet[4] = prompt('Geef een kleur in', "Rood"); */
+        /* var palet = palet.join(", "); */
+
+        document.write('Palet is: ' + palet);
+        var nieuwekleur = prompt('Geef een kleur in', 'oranje');
+        palet.push(nieuwekleur);
+        document.write('<p>Palet is: ' + palet + '</p>');
+        var nieuwekleur2 = prompt('Geef een kleur in', 'wit');
+        palet.unshift(nieuwekleur2);
+        document.write('<p>Palet is: ' + palet + '</p>');
+        palet.sort();
+        document.write('<p>Palet is: ' + palet + '</p>');
+        var palet2 = palet.splice(0, 4);
+        document.write('<p>Palet is: ' + palet + '</p>');
+        document.write('<p>Palet2 is: ' + palet2 + '</p>');
+        var palet3 = palet.slice();
+        document.write('<p>Palet3 is: ' + palet3 + '</p>');
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>Mijn reis deze zomer.</h1>
+    <script>
+        var usa = "\"USA\""
+        var newyork = "\"New York\"";
+        var losangeles = "\"Los Angeles\"";
+        var lasvegas = "\"Las Vegas\"";
+        var vliegreis = 850;
+        var ny = 50;
+        var la = 250;
+        var lv = 100;
+        var kostprijs = (ny + la + lv + vliegreis);
+        var btwP = 0.21;
+        var btw = (kostprijs / 100) * 21;
+        var totaal_incl_btw = (kostprijs + btw);
+
+        document.write("Deze zomer vlieg je naar de " + usa + "!<br>" +
+            "<br> Je bezoekt volgende plaatsen " + newyork + ", " + losangeles + ", " + lasvegas + ".<br>" +
+            "<br> De kostrprijs is: " +
+            "<br> Reis naar " + newyork + " is: " + ny +
+            "<br> Reis naar " + losangeles + " is: " + la +
+            "<br> Reis naar " + lasvegas + " is: " + lv +
+            "<br> -------------" +
+            "<br> Totaal: " + kostprijs +
+            "<br> btwPercentage: " + btwP +
+            "<br> -------------" +
+            "<br> Totaal incl btw: " + totaal_incl_btw);
+    </script>
+
+    <p>Matthias Van Dam 30/01/2020</p>
+    <style>
+        body {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+    </style>
+</body>
+
+</html>

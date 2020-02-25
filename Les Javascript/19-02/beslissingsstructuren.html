@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beslissingsstructuren</title>
+</head>
+
+<body>
+
+
+    <!-- 
+         && (and) : als ze alle2 gelijk zijn 
+         || : als 1 van de antwoorden gelijk is
+         ! not : keert om : waar wordt niet waar 
+          -->
+
+
+
+
+    <!-- <h3>IF</h3>
+    <script>
+        var wachtwoord = prompt("Wachtwoord?", "azerty")
+        if (wachtwoord == "azerty") {
+            alert("Wachtwoord correct!");
+
+        }
+
+        var naam1 = "Jan";
+        var naam2 = "Jan";
+        if (naam1 == naam2) {
+            document.write("<p>Beide namen zijn identiek</p>");
+        }
+        if (naam1 === naam2) {
+            document.write("<p>Beide namen zijn identiek en van hetzelfde type</p>");
+        }
+
+        var inhoud1 = 5; //number
+        var inhoud2 = "5"; //string
+        if (inhoud1 == inhoud2) {
+            document.write("<p>Beide inhouden zijn identiek</p>");
+        }
+        if (inhoud1 === inhoud2) {
+            document.write("<p>Beide inhouden zijn identiek en van hetzelfde type</p>");
+        }
+    </script>
+
+    <hr>
+
+    <h3>Oefening</h3>
+
+    <script>
+        //opdracht
+        var naam1 = "Javascript";
+        var naam2 = prompt("Wat ben je aan het leren?", "Javascript");
+        if (naam1 == naam2) {
+            document.write("<p>Beide namen zijn gelijk</p>")
+        }
+        if (naam1 === naam2) {
+            document.write("<p>Beide namen zijn identiek gelijk</p>");
+        }
+
+        var inhoud1 = 5;
+        var inhoud2 = prompt("Hoeveel is 3+2?", "5");
+        if (inhoud1 == inhoud2) {
+            document.write("<p>Beide inhouden zijn gelijk</p>");
+        }
+        if (inhoud1 === inhoud2) {
+            document.write("<p>Beide inhouden zijn identiek gelijk</p>");
+        }
+    </script>
+
+    <hr>
+    <h3>ELSE</h3> -->
+
+    <!--     <script>
+        var naam = "Java";
+        if (naam == "Javascript") {
+            alert("De naam is inderdaad Javascript");
+        } else {
+            alert("Nee , de naam is niet correct , dit zou Javascript moeten zijn");
+        }
+    </script>
+    <script>
+        var wachtwoord = prompt("Wachtwoord?", "azerty")
+        if (wachtwoord == "azerty") {
+            alert("Wachtwoord correct!");
+
+        } else {
+            alert("Wachtwoord is niet correct!")
+        }
+    </script> -->
+
+    <!--     <script>
+        var leeftijd = prompt("Wat is je leeftijd?", "27");
+        if (leeftijd >= 18) {
+            alert("Jij krijgt een pintje!!");
+        } else {
+            alert("Voor jou is het water")
+        }
+    </script> -->
+
+    <!--     <script>
+        var bedrag = prompt("Hoeveel geld heb je gespaard?", "2750");
+        if (bedrag >= 2500) {
+            document.write("De nieuwe laptop komt eraan");
+        } else {
+            document.write("Nog even wachten")
+        }
+    </script> -->
+    <!--     <script>
+        var antwoord = prompt("Hebt u een creditcard?", "ja");
+        var leeftijd = prompt("Hoe oud bent u ?", "27");
+        if (antwoord == "ja" && leeftijd >= 18) {
+            document.write("<p>Je mag 1000 euro lenen</p>")
+        } else if (antwoord !== "ja" && leeftijd >= 18) {
+            document.write("<p>Je mag 500 euro lenen</p>")
+        } else {
+            document.write("Je mag geen geld lenen")
+        }
+    </script> -->
+
+    <!--     <script>
+        var postcode = prompt("Wat is je postcode?", "1010ST");
+        if (postcode == "1010ST") {
+            alert("Kans op de Nationale Postcode Loterij is 90%")
+        } else {
+            alert("Kans op de Nationale Postcode Loterij is 0.069%")
+        }
+    </script> -->
+    <!--     <script>
+        var getal1 = parseInt(prompt("Geef een getal", "5"));
+        var getal2 = parseInt(prompt("Geef een tweede getal", "7"))
+        if (getal1 < getal2) {
+            alert(getal1 + " is kleiner dan " + getal2);
+        } else if (getal1 > getal2) {
+            alert(getal1 + " is groter dan " + getal2)
+        }
+
+
+        var groterofkleiner = (getal1 < getal2 ? getal1 + " is kleiner dan " + getal2 : getal1 + " is groter dan " + getal2);
+        document.write("De getallen die u invoorde waren " + getal1 + " en " + getal2 + " : " + groterofkleiner);
+    </script> -->
+
+    <!--     <script>
+        var dag = new Date();
+        var tijd = dag.getHours();
+        document.write("Het is nu " + tijd + " uur")
+        if (tijd >= "0" && tijd <= "7") {
+            document.write("<br>Goeienacht")
+        } else if (tijd >= "7" && tijd <= "12") {
+            document.write("<br>Goeiemorgen")
+        } else if (tijd >= "12" && tijd <= "18") {
+            document.write("<br>Goeiemiddag")
+        } else if (tijd >= "18" && tijd <= "24") {
+            document.write("<br>Goeie avond")
+        } else if (tijd >= "24") {
+            document.write("<br>Het uur dat u heeft ingegeven klopt niet!")
+        }
+    </script> -->
+
+    <!--     <script>
+        var naam = prompt("Geef je naam", "Andrea");
+        if (naam == null) {
+            document.write("U heeft geannulleerd!")
+        } else if (naam.length = 0) {
+            document.write("U heeft geen naam ingegeven")
+        } else {
+            document.write("Hallo " + naam + ". How are you today ?")
+        }
+    </script> -->
+
+    <script>
+        var nu = new Date();
+        var jaren = nu.getFullYear();
+
+        var jaartal = parseInt(prompt("Wanneer ga je op pensioen?", "2035"));
+        var pensioen = (jaartal - jaren)
+        if (jaartal == null) {
+            alert("U heeft geannulleerd!")
+        } else if (jaartal.length == null) {
+            alert("U heeft niets ingegeven!")
+        } else if (jaartal < 2020 && jaartal < 1900) {
+            alert("Bent u al op pensioen?")
+        } else if (jaartal.length < 4) {
+            alert("Geef een jaartal in met 4 cijfers!")
+        } else {
+            document.write("Je gaat op pensioen binnen " + pensioen + " jaar")
+        }
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

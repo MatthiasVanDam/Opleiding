@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Labo5</title>
+</head>
+
+<body>
+    <script>
+        var einddatum = prompt('Wat is de deadline? JJJJ-MM_DD', '2020-07-17');
+        var deadline = new Date(einddatum);
+        document.write("<p>Deadline is:" + deadline);
+        var nu = Date.now();
+        var dag = 86400000;
+        var resterende = (((deadline - nu) / dag).toFixed(0));
+
+        document.write("<p>Er zijn nog " + resterende + " dagen tot de deadline</p>");
+
+        var eersteschooldag = new Date('2020-01-20')
+        document.write("<p>De eerste schooldag was : " + eersteschooldag);
+        var laatsteschooldag = new Date('2020-07-17');
+        document.write("<p>De laatste schooldag is : " + laatsteschooldag);
+        var aantal = ((laatsteschooldag - eersteschooldag) / dag).toFixed(0)
+        document.write("<p>Er zijn " + aantal + " dagen in de opleiding</p>")
+    </script>
+
+</body>
+
+</html>

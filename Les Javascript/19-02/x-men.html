@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var my_IMDB = [new Array()];
+        my_IMDB[0] = {
+            titel: 'x-men',
+            lengte: 104,
+            jaar: 2000,
+            sterren: 7.4
+        }
+
+
+        my_IMDB[1] = {
+            titel: 'Rise of the Silver Surfer',
+            lengte: 122,
+            jaar: 2007,
+            sterren: 5.6
+        }
+
+
+        document.write("<p>De titel van de filmis: " + my_IMDB[0].titel + ", deze duurt " + my_IMDB[0].lengte + "minuten , kwam uit in " + my_IMDB[0].jaar + " en kreeg " + my_IMDB[0].sterren + ' sterren</p>');
+        document.write("<p>De titel van de filmis: " + my_IMDB[1].titel + ", deze duurt " + my_IMDB[1].lengte + "minuten , kwam uit in " + my_IMDB[1].jaar + " en kreeg " + my_IMDB[1].sterren + ' sterren</p>');
+
+        my_IMDB.push({
+            titel: "Black Panther",
+            lengte: 134,
+            jaar: 2014,
+            sterren: 7.5
+        });
+        my_IMDB.shift();
+        my_IMDB.reverse();
+
+        document.write("<p>De titel van de film is: " + my_IMDB[0].titel + ", deze duurt " + my_IMDB[0].lengte + "minuten , kwam uit in " + my_IMDB[0].jaar + " en kreeg " + my_IMDB[0].sterren + ' sterren</p>');
+        document.write("<p>De titel van de film is: " + my_IMDB[1].titel + ", deze duurt " + my_IMDB[1].lengte + "minuten , kwam uit in " + my_IMDB[1].jaar + " en kreeg " + my_IMDB[1].sterren + ' sterren</p>');
+    </script>
+
+</body>
+
+</html>

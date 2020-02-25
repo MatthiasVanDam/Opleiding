@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Labo4
+    </title>
+</head>
+
+<body>
+    <h1>Euro naar Dollars omzetten</h1>
+    <script>
+        var euronaardollar = prompt("Wat is de koers van de dollar?");
+        var aantaleuro = prompt("Hoeveel euro's wil je omzetten naar dollar?");
+        var commissiepercentage = prompt("Hoeveel commissie neemt de bank?");
+        var vastekost = prompt("Wat is de vaste kost?");
+        var commissie = (aantaleuro / 100) * commissiepercentage;
+        var euromin = aantaleuro - vastekost - commissie;
+        var totaal = euromin * euronaardollar;
+        document.write("<p>Je wil €" + aantaleuro + " omzetten naar dollars tegen een koers van " + euronaardollar + "$ per euro" +
+            "</p>");
+        document.write("<p>De bank rekent " + commissiepercentage + "% commissie aan : €" + commissie + "</p>");
+        document.write("<p>Met een vaste kost van: €" + vastekost + "</p>");
+        document.write("<p> Je krijgt dus: " +
+            aantaleuro + "-" +
+            commissie + "-" +
+            vastekost + " =" +
+            euromin + "*" +
+            euronaardollar + " = " +
+            totaal + "$." +
+            "</p>")
+    </script>
+
+</body>
+
+</html>

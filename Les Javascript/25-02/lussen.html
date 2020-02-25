@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lussen</title>
+</head>
+
+<body>
+    <script>
+        for (i = 0; i < 3; i++) {
+            console.log("Hello for World");
+        }
+
+        /* for (i = 1; i <= 10; i++) {
+            document.write("Wat een mooie dag.<br/>");
+        } */
+
+
+        /* var stap = 1
+        for (i = stap; i <= 10; i++) {
+            document.write("<p>Ik neem een stap</p>")
+        } */
+
+
+        /* for (i = 7; i <= 11; i++) {
+            document.write("<p>Is de les bijna gedaan?</p>")
+        } */
+
+
+        /* for (i = 0; i <= 3; i++) {
+            document.write("<p>Dit is de lus: " + i + "</p>")
+        } */
+
+
+        /* for (var i = 0; i < 10; i++) {
+            document.write("Er volgen nu nog " + (9 - i) + " berichtjes<br />");
+        } */
+
+        /* for (i = 1; i < 10; i++) {
+            document.write("<p>Ik heb " + i + "stap(pen) genomen</p>");
+        } */
+
+
+        /* var namen = ['Jan', 'Piet', 'Joris'];
+        var lengte = namen.length;
+        for (i = 0; i < lengte; i++) {
+            document.write('<p>De naam is ' + namen[i] + '.</p>');
+        } */
+
+
+        /* var getallen = [5, 37, 88, 4, 0];
+        var lengte = getallen.length;
+        for (i = 0; i < lengte; i++) {
+            document.write('<p>Het getal op plaats ' + i + ' is ' + getallen[i] + '.</p>');
+        } */
+
+
+        /* var namen = ["Zakaria", "Albert", "Hamsa", "Mike", "Pieter", "Harry"];
+        var lengte = namen.length;
+        for (i = 0; i < lengte; i++) {
+            document.write("<br>element " + i + " is " + namen[i]);
+        } */
+
+
+        /* var maanden = new Array("januari", "februari", "maart", "april", "mei", "juni", "juli", "augustus", "september", "oktober", "november", "december");
+        var lengte = maanden.length;
+        for (i = 1; i <= lengte; i++) {
+            document.write("<br>Maand " + i + " is " + maanden[i - 1]);
+        } */
+
+        /* var tekst = "JavaScript";
+        var letter = tekst.charAt(0);
+        document.write(letter); */
+
+        /* var tekst = "Hij lijkt een beetje op Nelson Mandela.";
+        lengte = tekst.length;
+        spaties = 0;
+        document.write("<br>");
+        for (x = 0; x < lengte; x++) {
+            teken = tekst.charAt(x);
+            document.write(teken);
+            if (teken == " ") {
+                spaties++;
+            }
+        }
+        document.write("<br>Tekste bevat " + spaties + "spaties"); */
+
+
+        var tekst = "Hij lijkt een beetje op Nelson Mandela.";
+        lengte = tekst.length;
+        lettera = 0;
+        lettere = 0;
+        letteri = 0;
+        lettero = 0;
+        letteru = 0;
+        document.write("<br>");
+        for (x = 0; x < lengte; x++) {
+            teken = tekst.charAt(x);
+            document.write(teken);
+            if (teken === "a") {
+                lettera++;
+            } else if (teken === "e") {
+                lettere++;
+            } else if (teken === "i") {
+                letteri++;
+            } else if (teken === "o") {
+                lettero++;
+            } else if (teken === "u") {
+                letteru++;
+            }
+        }
+        document.write("<br>Aantal a\'s: " + lettera)
+        document.write("<br>Aantal e\'s: " + lettere)
+        document.write("<br>Aantal i\'s: " + letteri)
+        document.write("<br>Aantal o\'s: " + lettero)
+        document.write("<br>Aantal u\'s: " + letteru)
+    </script>
+</body>
+
+</html>

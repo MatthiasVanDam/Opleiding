@@ -1,0 +1,29 @@
+html {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    width: 100%;
+    background-color: cadetblue;
+}
+
+main {
+    height: 500px;
+    width: 850px;
+    background-image: url(../img/bananentaart.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    font: bold;
+}
+
+header {
+    background: aqua;
+}
+
+th {
+    background: rgb(0, 0, 0, 0.5);
+}

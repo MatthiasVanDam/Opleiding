@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Labo6</title>
+</head>
+
+<body>
+    <script>
+        var klantnaam = prompt("Voer je eigen naam in", "Andrea");
+        var aantal = parseInt(prompt("aantal boeken te bestellen?", "22"));
+        var titel = "JavaScript";
+        var prijs = 29.90;
+        var bedrag = aantal * prijs;
+        var btw = (bedrag / 100) * 6
+
+
+
+        var vandaag = new Date();
+        var maanden = new Array("januari", "februari", "maart", "april", "mei", "juni", "juli", "augustus", "september", "oktober", "november", "december");
+        var weekdag = new Array("zondag", "maandag", "dinsdag", "woensdag", "donderdag", "vrijdag", "zaterdag");
+        var jaar = vandaag.getFullYear();
+        var nu = Date.now();
+        var dag = 86400000;
+        var Betaaldatum = new Date(nu + (5 * dag));
+        var dagB = weekdag[Betaaldatum.getDay()];
+
+        console.log(Betaaldatum);
+        console.log(dagB);
+
+
+        document.write("<h1>Lab 06</h1>");
+        document.write("<h3>Factuur</h3>");
+
+
+        document.write("<p>Factuurdatum: " + weekdag[vandaag.getDay()] + ' ' +
+            vandaag.getDate() + ' ' +
+            maanden[vandaag.getMonth()] + ' ' +
+            jaar + "</p>");
+        document.write("<p>Betaaldatum: " + weekdag[Betaaldatum.getDay()] + ' ' +
+            Betaaldatum.getDate() + ' ' +
+            maanden[Betaaldatum.getMonth()] + ' ' +
+            jaar + "</p>");
+
+        document.write("<p>Bedankt voor je bestelling: " + klantnaam + "</p>");
+        document.write("<p>Boektitel is: " + titel + "</p>");
+        document.write("<p>Aantal te bestellen: " + aantal + "</p>");
+        document.write("<p>Prijs per boek is: " + prijs.toFixed(2) + "</p>");
+        document.write("<p>Bedrag is: " + bedrag.toFixed(2) + "</p>");
+        document.write("<p>BTW is: " + btw.toFixed(2) + "</p>");
+        document.write("<p>Totaal inclusief BTW is: " + (bedrag + btw).toFixed(2) + "</p>");
+        console.log(maanden[vandaag.getMonth()])
+    </script>
+
+</body>
+
+</html>

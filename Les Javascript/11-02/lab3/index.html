@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var totaleJaar = new Array("januari", "februari", "maart", "april", "mei", "juni", "juli", "augustus", "september", "oktober", "november", "december");
+        var zomer = totaleJaar.slice(5, 8);
+        var zomerString = zomer.join(",")
+        var jaarZonderWinter = totaleJaar.slice();
+        jaarZonderWinter.shift();
+        jaarZonderWinter.shift();
+        jaarZonderWinter.pop();
+        console.log(zomer);
+        document.write("Zomer: " + zomerString);
+        document.write("<br>Jaar zonder winter: " + jaarZonderWinter);
+        var nummerMaart = totaleJaar.indexOf("maart");
+        console.log(totaleJaar + " " + nummerMaart);
+        document.write("<br>Maart is maand nr " + nummerMaart);
+    </script>
+
+</body>
+
+</html>

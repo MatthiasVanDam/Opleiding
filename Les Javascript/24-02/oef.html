@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tussentijdse oefeningen</title>
+</head>
+
+<body>
+    <!--     <script>
+        var geboortejaar = prompt("Geef u geboortejaar", "1992");
+        var jaar = prompt("Geef het lopende jaartal in", "2020");
+        if (jaar - geboortejaar >= 18) {
+            alert("Vanaf nu mag, kan en beslis ik alles , binnen de wettelijke grenzen")
+        } else if (jaar - geboortejaar < 18) {
+            alert("Gelukkig heb ik mijn ouders die alles voor me regelen")
+        }
+    </script> -->
+
+
+
+    <script>
+        var geboortejaar = prompt("Geef u geboortejaar", "1992");
+        var nu = new Date();
+        var jaar = nu.getFullYear();
+        if (geboortejaar == null) {
+            alert("U heeft geannulleerd!")
+        } else if (geboortejaar.length == null) {
+            alert("U heeft niets ingegeven!")
+        } else if (geboortejaar.length < 4) {
+            alert("Geef een jaartal in met 4 cijfers!")
+        } else if (geboortejaar < 2020 && geboortejaar < 1900) {
+            alert("Geef een geboortejaar tussen 1900 en " + jaar)
+        } else if (jaar - geboortejaar > 18) {
+            document.write("Je bent dit jaar " + (jaar - geboortejaar) + " jaar oud. Je mag deelnemen aan de spelen van de Nationale Loterij")
+        } else if (jaar - geboortejaar <= 18) {
+            document.write("Om deel te nemen aan de spellen van de Nationale Loterij moet je minimum 18 jaar oud zijn.")
+        }
+    </script>
+
+</body>
+
+</html>

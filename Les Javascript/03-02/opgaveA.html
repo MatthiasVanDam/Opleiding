@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Loonberekening</h1>
+    <script>
+        alert("Loonberkening");
+        var antwoord = confirm("hallo, wil je je loon berekenen");
+        console.log("Jouw antwoord was " + antwoord);
+
+
+        if (antwoord == true) {
+            var jaarloon = parseInt(prompt("wat is je jaarloon", "1000"));
+            console.log("Loon van gebruiker is € " + jaarloon);
+            var maandloon = jaarloon / 12;
+            var vakantiegeld = (maandloon / 100) * 50;
+            var totaal = jaarloon + vakantiegeld;
+            document.write("Je antwoord was " + antwoord + "<br>Als je € " + jaarloon + " per jaar verdient, dan krijg je € " + vakantiegeld.toFixed(2) +
+                ".<br>Met je vakantiegeld erbij geteld zal je dan € " + totaal.toFixed(2) + " verdienen.");
+        } else {
+            alert("Toch bedankt")
+            document.write("Toch bedankt!")
+        }
+    </script>
+    <p>Matthias Van Dam 30/01/2020</p>
+
+
+    <style>
+        body {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+    </style>
+</body>
+
+</html>

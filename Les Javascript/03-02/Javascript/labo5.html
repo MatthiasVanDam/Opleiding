@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Labo5
+    </title>
+</head>
+
+<body>
+    <script>
+        var weekdag = new Array();
+        weekdag[0] = "maandag";
+        weekdag[1] = "dinsdag";
+        weekdag[2] = "woensdag";
+        weekdag[3] = "donderdag";
+        weekdag[4] = "vrijdag";
+        weekdag[5] = "zaterdag";
+        weekdag[6] = "zondag";
+        console.log(weekdag);
+        var resultaat = weekdag[0];
+        console.log(resultaat);
+
+        var weekdag2 = new Array("maandag", "dinsdag", "woensdag", "donderdag", "vrijdag", "zaterdag", "zondag");
+        console.log(weekdag2);
+        var weekdag3 = ["maandag", "dinsdag", "woensdag", "donderdag", "vrijdag", "zaterdag", "zondag"];
+
+        document.write("Vandaag is het: " + weekdag[0]);
+
+        var maanden = new Array();
+        maanden[0] = "januari";
+        maanden[1] = "februari";
+        maanden[2] = "maart";
+        maanden[3] = "april";
+        maanden[4] = "mei";
+        maanden[5] = "juni";
+        maanden[6] = "juli";
+        maanden[7] = "augustus";
+        maanden[8] = "september";
+        maanden[9] = "oktober";
+        maanden[10] = "november";
+        maanden[11] = "december";
+        document.write("<p>Deze maand is het: " + maanden[1] + "</p>");
+
+        var uur = new Array();
+        uur[0] = 0;
+        uur[1] = 1;
+        uur[2] = 2;
+        uur[3] = 3;
+        uur[4] = 4;
+        uur[5] = 5;
+        uur[6] = 6;
+        uur[7] = 7;
+        uur[8] = 8;
+        uur[9] = 9;
+        uur[10] = 10;
+        uur[11] = 11;
+        uur[12] = 12;
+
+        document.write("<p>Het is: " + uur[3] + "uur</p>");
+
+        //verschillende datatypes per array
+        var verschillendeDatatypes = [1, "drie", true];
+        console.log(typeof verschillendeDatatypes[1]);
+
+        var studenten = new Array("Zakaria", " Albert", " Hamsa", " Mike", " Pieter");
+        document.write("<br>Opgave 24: Studenten: " + studenten);
+        var team = studenten;
+        team[0] = "Umut";
+        document.write("<br>Opgave 25: Team: " + team)
+        console.log(team);
+        console.log(studenten);
+
+        studenten.shift();
+        console.log(studenten);
+
+        studenten.unshift("Umut", "Jozef");
+        console.log(studenten);
+
+        studenten.pop();
+
+        studenten.push("Pieter", "David");
+        console.log(studenten);
+
+        var nieuwearray = team.splice(0, 3);
+        console.log(studenten);
+    </script>
+
+</body>
+
+</html>

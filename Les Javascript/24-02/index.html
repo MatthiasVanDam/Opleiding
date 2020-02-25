@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Berekening</title>
+</head>
+
+<body>
+
+    <script>
+        var gewicht = prompt("Geef u gewicht in", "62");
+        if (gewicht == null) {
+            document.write("U heeft geannulleerd!");
+        } else if (gewicht.length = 0) {
+            document.write("U heeft geen gewicht ingegeven");
+        } else {
+            var lengte = prompt("Geef u lengte in(in meters)", "1.88");
+            if (lengte == null) {
+                document.write("U heeft geannulleerd!");
+            } else if (lengte.length = 0) {
+                document.write("U heeft geen lengte ingegeven");
+            }
+        }
+        var bmi = gewicht / (lengte * lengte)
+        if (bmi < 18, 5) {
+            document.write("Uw BMI is " + bmi.toFixed(2) + ", dus onder 18,5, dit betekent dat u ondergewicht heeft");
+        } else if (bmi >= 18, 5 && bmi < 25) {
+            document.write("Uw BMI is " + bmi.toFixed(2) + ", dus tussen 18.5 en 25, dit betekent dat u een gezond gewicht heeft.");
+        } else if (bmi >= 25 && bmi < 30) {
+            document.write("Uw BMI is " + bmi.toFixed(2) + ", dus tussen 25 en 30, dit betekent dat u overgewicht heeft.");
+        } else if (bmi >= 30) {
+            document.write("Uw BMI is " + bmi.toFixed(2) + ", dus over de 30, dit betekent dat u overgewicht heeft.");
+        }
+    </script>
+
+</body>
+
+</html>

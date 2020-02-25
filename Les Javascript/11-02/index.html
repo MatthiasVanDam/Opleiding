@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var weekdagen = new Array('maandag', 'dinsdag', 'woensdag', 'donderdag', 'vrijdag', 'zaterdag', 'zondag');
+        console.log(weekdagen);
+        console.log(weekdagen[5]);
+        var weekdagencopie = weekdagen // opgelet zelfde inhoud, dus geen echte kopie   //
+        weekdagen.shift(); //eerste verwijderen//
+        console.log(weekdagen);
+        weekdagen.push('maandag'); //achteraan toevoegen   //
+        console.log(weekdagen);
+        var weekend = weekdagen.splice(4, 2); // verdelen in 2 arrays , (4,2= vanaf 4de object 2 objecten) of verwijderen //
+        console.log(weekend);
+        weekdagen.sort(); // alfabetisch rankschikken   //
+        console.log(weekdagen);
+        weekdagen.reverse(); // omgekeerd alfabetisch rankschikken   //
+        console.log(weekdagen);
+        var index = weekdagen.indexOf('woensdag'); // kijken of het in het array voorkomt (-1 = niet aanwezig , anders het cijfer van het object in de array)//
+        console.log(index);
+        delete weekdagen[1]; // inhoud op die plaats verwijderen , dus niet de plaats ! //
+        console.log(weekdagen);
+
+        console.log(typeof weekend[0]);
+
+
+
+
+        var studenten = new Array('Jan', 'Jozef', 'Piet');
+        var plaats = studenten.indexOf('Jozef');
+        studenten.splice(plaats, 1);
+        console.log(studenten);
+
+        var studentenKopie = studenten.slice(); // echte kopie  vanaf het nummer in de array TOT het opgegeven nummer//
+        studenten.push('Miet');
+        console.log(studenten);
+        console.log(studentenKopie);
+
+        var studentenString = studenten.join(" - ");
+        console.log(studentenString);
+
+        var mijnString = "Vandaag is het dinsdag";
+        var mijnArray = mijnString.split(" ");
+        console.log(mijnString);
+        console.log(mijnArray);
+    </script>
+
+</body>
+
+</html>
