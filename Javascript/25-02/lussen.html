@@ -154,51 +154,62 @@
 
         //////////////////////////////////////////////////////////////////// 
 
-        var nummer = ['nul', 'een', 'twee', 'drie', 'vier', 'vijf', 'zes', 'zeven', 'acht', 'negen'];
+        // function schrijf() {
+        //     document.write(getal);
+        // }
 
+        // var nummer = ['nul', 'een', 'twee', 'drie', 'vier', 'vijf', 'zes', 'zeven', 'acht', 'negen'];
+
+
+        // var telefoon = prompt('Wat is je telefoonnummer?');
+        // var lengte = telefoon.length;
+
+        // console.log(telefoon);
+        // document.write('Je nummer is: ' + telefoon + '<br>')
+        // for (i = 0; i < lengte; i++) {
+
+        //     var getal = telefoon.charAt(i);
+
+        //     switch (getal) {
+        //         case "0": schrijf(nummer[0] + ' ');
+        //             break;
+        //         case "1": schrijf(nummer[1] + ' ');
+        //             break;
+        //         case "2": schrijf(nummer[2] + ' ');
+        //             break;
+        //         case "3": schrijf(nummer[3] + ' ');
+        //             break;
+        //         case "4": schrijf(nummer[4] + ' ');
+        //             break;
+        //         case "5": schrijf(nummer[5] + ' ');
+        //             break;
+        //         case "6": schrijf(nummer[6] + ' ');
+        //             break;
+        //         case "7": schrijf(nummer[7] + ' ');
+        //             break;
+        //         case "8": schrijf(nummer[8] + ' ');
+        //             break;
+        //         case "9": schrijf(nummer[9] + ' ');
+        //             break;
+
+
+
+        //     }
+
+        // };
+
+        //////////////////////////////////////////////////////////////////// 
+        var nummer = ['nul', 'een', 'twee', 'drie', 'vier', 'vijf', 'zes', 'zeven', 'acht', 'negen'];
 
         var telefoon = prompt('Wat is je telefoonnummer?');
         var lengte = telefoon.length;
 
-        console.log(telefoon);
-
+        document.write('<p>' + telefoon + '</p>');
+        document.write('<p>Je telefoonnummer is: </p>');
         for (i = 0; i < lengte; i++) {
-
-            var getal = telefoon.charAt(i);
-
-            switch (getal) {
-                case "0": document.write(nummer[i] + ' ');
-                    break;
-                case "1": document.write(nummer[i] + ' ');
-                    break;
-                case "2": document.write(nummer[i] + ' ');
-                    break;
-                case "3": document.write(nummer[i] + ' ');
-                    break;
-                case "4": document.write(nummer[i] + ' ');
-                    break;
-                case "5": document.write(nummer[i] + ' ');
-                    break;
-                case "6": document.write(nummer[i] + ' ');
-                    break;
-                case "7": document.write(nummer[i] + ' ');
-                    break;
-                case "8": document.write(nummer[i] + ' ');
-                    break;
-                case "9": document.write(nummer[i] + ' ');
-                    break;
-
-
-
-            }
-
-        };
-
-        //////////////////////////////////////////////////////////////////// 
-
-
-
-        //////////////////////////////////////////////////////////////////// 
+            document.write(nummer[telefoon.charAt(i)] + ' ');
+        }
+        ////////////////////////////////////////////////////////////////////
         //////////////////////////////////////////////////////////////////// 
         //////////////////////////////////////////////////////////////////// 
         //////////////////////////////////////////////////////////////////// 
