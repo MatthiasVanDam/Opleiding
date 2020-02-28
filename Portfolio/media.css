@@ -1,4 +1,56 @@
-@media screen (max-width:800px){
+@media screen and (max-width:900px){
+
+    .container {
+        width: 80vw;
+        margin: 0 auto;
+        padding: 20px;
+    }
+    
+    form {
+            
+        width: 90%;
+       
+    }
+
+}
+@media screen and (max-width:900px){
+
+    .projects{display: block;
+    }
+
+    .proContent {
+        flex: 1 1 70%;
+        padding: 0 20px;
+    }
+    h1{
+        padding: 10px 0;
+    }
+
+    .projects h2{
+        padding-top: 3%;
+        }
+
+        
 
 }
 
+
+@media screen and (max-width:500px){
+    *{
+        font-size: 0.9rem;
+    }
+    h1{
+        font-size: 1rem;
+    }
+
+    .projects h2{
+    padding-top: 3%;
+    }
+ 
+
+    .container {
+        width: 90vw;
+        padding: 20px;
+    }
+
+}

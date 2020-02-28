@@ -178,12 +178,14 @@
             margin: 4% 0;
             display: flex;
             flex-wrap: wrap;
+        
         }
         
         .proImage {
             background-color: #4F5A6B;
             text-align: center;
             flex: 1 1 30%;
+            min-height: 200px;
         }
         
         .proContent {
@@ -208,6 +210,7 @@
             background-color: #333;
             width: 100%;
         }
+        
         
         form {
             margin: 15% auto;
