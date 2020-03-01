@@ -115,19 +115,17 @@
         //     document.write('<br> je hebt ' + cursus.toUpperCase() + ' gekozen')
         // }
         // else { document.write('<br> Kies een geldige cursus') }
-
-
     </script>
 
     <form name="form">
         <input type="text" name="zoek" />
         <input type="text" name="vervang" />
-        <input type="button" name="button" value=" Vervang"
-            onclick="vervangen(doc,document.form.zoek.value, document.form.vervang.value);" />
+        <input type="button" name="button" value=" Vervang" onclick="vervangen(doc,document.form.zoek.value, document.form.vervang.value);" />
     </form>
     <script>
         ////////////////////////////////////////////////////////////////////
         doc = 'dit document is een lang document en vervangt die door het nieuwewoord'
+
         function vervangen(doc, woord, nieuwewoord) {
 
             if (doc.indexOf(woord) != -1) {
@@ -144,7 +142,6 @@
 
         ////////////////////////////////////////////////////////////////////
         ////////////////////////////////////////////////////////////////////
-
     </script>
 </body>
 
