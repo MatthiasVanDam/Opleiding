@@ -117,8 +117,9 @@
         // else { document.write('<br> Kies een geldige cursus') }
     </script>
 
-    <form name="form">
-        <input type="text" name="zoek" />
+    <form id="form" name="form">
+        <p>dit document is een lang document en vervangt die door het nieuwewoord</p>
+        <input type="text" name="zoek" value="" />
         <input type="text" name="vervang" />
         <input type="button" name="button" value=" Vervang" onclick="vervangen(doc,document.form.zoek.value, document.form.vervang.value);" />
     </form>
@@ -126,19 +127,30 @@
         ////////////////////////////////////////////////////////////////////
         doc = 'dit document is een lang document en vervangt die door het nieuwewoord'
 
+        woord = document.form.zoek.value;
+        nieuwewoord = document.form.vervang.value;
+        form = document.form;
+
         function vervangen(doc, woord, nieuwewoord) {
 
             if (doc.indexOf(woord) != -1) {
 
-                deel1 = doc.substr(0, indexOf(woord)) + nieuwewoord;
-                deel2 = doc.substring(doc.incexOf(woord) + woord.length, doc.length);
+                deel1 = doc.substr(0, doc.indexOf(woord)) + nieuwewoord;
+                deel2 = doc.substring(doc.indexOf(woord) + woord.length, doc.length);
                 doc = deel1 + deel2;
+                document.write(doc);
+
+
+            } else {
+                form.onload();
+
+                document.write('Geef een woord of letter in uit de text dat je wilt vervangen')
 
             }
 
         };
 
-        document.write(doc);
+
 
         ////////////////////////////////////////////////////////////////////
         ////////////////////////////////////////////////////////////////////
