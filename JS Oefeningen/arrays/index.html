@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form>
+        <input id="bedrag" type="text">
+        <input type="button" value="Bereken" onclick="bedragCalc();">
+    </form>
+    <script>
+        // var bills = [124, 48, 268];
+
+        // function tipCalc(bill) {
+        //     var prcnt;
+        //     if (bill < 50) {
+        //         prcnt = 0.5;
+
+        //     } else if (bill > 50 && bill < 200) {
+        //         prcnt = 0.15;
+
+        //     } else {
+        //         prcnt = 0.1;
+
+        //     }
+        //     return bill * prcnt
+        // };
+
+        // finalBills = [tipCalc(bills[0]).toFixed(2), tipCalc(bills[1]).toFixed(2), tipCalc(bills[2]).toFixed(2)]
+        // console.log(bills)
+        // document.write('<p>' + finalBills[0] + '</p>' +
+        //     '<p>' + finalBills[1] + '</p>' + '<p>' +
+        //     finalBills[2] + '</p>');
+
+
+
+
+        function bedragCalc() {
+            bedrag = document.getElementById.value;
+            btw = bedrag * 0.21;
+            document.write(btw)
+
+            resultaat.push(btw);
+            alert('berekend')
+        }
+        var resultaat = []
+    </script>
+</body>
+
+</html>
