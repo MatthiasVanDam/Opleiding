@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0 auto;
+    width: 80%;
+    background-attachment: fixed;
+}
+
+#form {
+    width: 30%;
+    margin: 0 auto;
+}
+
+.formBox {
+    width: 100%;
+    display: flex;
+}
+
+label {
+    flex: 1 1 30%;
+}
+
+input {
+    margin-bottom: 10px;
+}
+
+input[type="text"] {
+    flex: 1 1 70%;
+}
+
+input[type="button"] {
+    display: block;
+    margin: 0 auto;
+    width: 30%;
+}

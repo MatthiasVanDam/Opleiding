@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <form id="form" for="user">
+        <!--Voornaam-->
+        <div class="formBox">
+            <label for="voornaam">Voornaam</label>
+            <input id="voornaam" type="text" placeholder="Jan">
+        </div>
+        <!--Achternaam-->
+        <div class="formBox">
+            <label for="voornaam">Achternaam</label>
+            <input id="achternaam" type="text" placeholder="Jansen">
+        </div>
+        <!--email-->
+        <div class="formBox">
+            <label for="voornaam">E-mail</label>
+            <input id="email" type="text" placeholder="kan.jansen@example.be">
+        </div>
+        <!--job-->
+        <div class="formBox">
+            <label for="voornaam">Job</label>
+            <input id="job" type="text" placeholder="webdesigner">
+        </div>
+        <div class="forbox">
+            <input type="button" value="Save" onclick="addUser();" ;>
+        </div>
+    </form>
+    <script>
+        var users = [];
+
+        const addUser = () => {
+
+            var user = {
+                id: Date.now(),
+                voornaam: document.getElementById("voornaam").value,
+                achternaam: document.getElementById("achternaam").value,
+                email: document.getElementById("email").value,
+                job: document.getElementById("job").value
+            }
+            users.push(user);
+            document.forms[0].reset();
+            console.warn('added', {
+                users
+            });
+            localStorage.setItem('Users', JSON.stringify(users));
+            console.log(users[0])
+        }
+    </script>
+</body>
+
+</html>
