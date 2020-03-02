@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<script language="JavaScript" type="text/javascript">
+		var totale_prijs=0;
+		var kostprijs= prompt("Geef de kostprijs in aub :");
+		var btw_percentage= prompt("Geef het btw percentage in ajb (bv. 0.21) :");
+		var aantal=prompt("Geef het aantal stuks in ajb :");
+		
+		if(kostprijs == null || btw_percentage == null || aantal == null){
+			document.write("<p>U heeft geannuleerd!");
+		}
+		else if(kostprijs.length == 0 || btw_percentage.length == 0 || aantal.length == 0){
+			document.write("<p>U heeft niet alles ingegeven!");
+		}
+		else if(isNaN(kostprijs) || isNaN(aantal) || isNaN(btw_percentage)){
+			document.write('<p>Het zijn niet allemaal nummers!</p>');
+		}
+		else {
+			kostprijs=parseFloat(kostprijs);
+			btw_percentage=parseFloat(btw_percentage);
+			aantal=parseInt(aantal);
+			console.log(btw_percentage);
+
+			totale_prijs=(kostprijs + (kostprijs* btw_percentage)) * aantal;
+
+			document.write("De totale kostprijs is: " + totale_prijs);
+		}
+		</script>
+	</head> 
+	<body>
+	</body>
+	</html>

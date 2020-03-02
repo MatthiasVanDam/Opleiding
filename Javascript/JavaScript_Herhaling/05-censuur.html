@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+</head>
+
+<body>
+    <script type="text/javascript">
+    var tekst = "Godslastering en andere vuile woorden zullen gecensureerd worden!";
+    document.write("<p>" + tekst + "</p>");
+    var woord = prompt('Welk woord wil je censureren?');
+    if (tekst.indexOf(woord) != -1) {
+        var nieuweTekst = tekst.substring(0, tekst.indexOf(woord)) + "GECENSUREERD " + tekst.substring(tekst.indexOf(woord) + woord.length, tekst.length);
+        document.write("<p>" + nieuweTekst + "</p>");
+    } else {
+        document.write("<p>Dat woord vind ik niet!</p>");
+    }
+    /*
+    werk met substring
+    */
+    </script>
+</body>
+
+</html>

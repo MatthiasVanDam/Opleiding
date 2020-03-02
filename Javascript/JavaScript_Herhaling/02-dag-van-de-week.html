@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<style type="text/css">
+	</style>
+	<script type="text/javascript">
+		var weekdag=prompt("Geef de weekdag ajb.");
+		if(weekdag == null){
+			document.write("U heeft geanuleerd!");
+		}
+		else if(weekdag.length==0){
+			document.write("U heeft niets ingegeven. Probeer opnieuw")
+		}
+		else if(weekdag=="zaterdag" || weekdag=="zondag"){
+			alert("Hoera, het is weekend !");
+		}
+		else if(weekdag=="maandag" || weekdag=="dinsdag" || weekdag=="woensdag" || weekdag=="donderdag" || weekdag=="vrijdag"){
+			document.write("Helaas, het is een werkdag");
+		}
+		else{
+			document.write("U heeft geen weekdag ingegeven met de juiste notatie.");
+		}
+</script>
+</head>
+<body>
+
+</body>
+</html>

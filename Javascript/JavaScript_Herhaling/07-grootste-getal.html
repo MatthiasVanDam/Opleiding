@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<script language="JavaScript" type="text/javascript">
+
+		var scores = new Array(30,410,10,490);
+		var lengte=scores.length;
+		var grootsteGetal=scores[0];
+		var plaats=0;
+		/*begin met te zeggen dat het grootste getal het eerste is op positie 0*/
+		
+		for(var i=1; i<lengte; i++){
+			/*dus niet vertrekken van 0, want die heb je al */
+			if(scores[i] > grootsteGetal){
+				grootsteGetal=scores[i];
+				plaats=i;
+			}
+		}
+		document.write("Het grootste getal: "+ grootsteGetal +" staat in de array op de plaats: " + plaats);
+	</script> 
+</body>
+</html>

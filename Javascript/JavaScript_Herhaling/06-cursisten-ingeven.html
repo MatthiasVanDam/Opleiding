@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="utf-8">
+    <title>Controle email</title>
+    <script type="text/javascript">
+    var cursisten = new Array();
+
+    function ingeven() {
+        var cursist = prompt("Geef de naam van de cursist in. (0 om te stoppen)");
+        if (cursist == null) {
+            document.write("<p>U heeft geanulleerd!</p>");
+        } else if (cursist.length == 0) {
+            document.write("<p>U heeft niets ingevuld!</p>");
+        } else if (cursist == "0") {
+            document.write('<p>U bent gestopt met cursisten ingeven.</p>')
+            tonen()
+        } else {
+            cursisten.push(cursist);
+            ingeven();
+        }
+    }
+
+    function tonen() {
+        if (cursisten.length > 0) {
+            document.write("<p>Dit zijn de cursisten:");
+            var lengte = cursisten.length;
+            for (i = 0; i < lengte; i++) {
+                document.write("<p>" + cursisten[i] + "</p>");
+            }
+        } else {
+            document.write("<p>Er zijn geen cursisten ingegeven.");
+        }
+    }
+
+    ingeven();
+    </script>
+</head>
+
+<body>
+</body>
+
+</html>

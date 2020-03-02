@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="utf-8">
+    <title>Controle email</title>
+    <script type="text/javascript">
+    var email = prompt("Geef je emailadres in:");
+    if (email == null) {
+        document.write("<p>U heeft geannuleerd!</p>");
+    } else if (email.length == 0) {
+        document.write("<p>U heeft niets ingegeven!</p>");
+    } else {
+        var at = email.indexOf("@");
+        var punt = email.indexOf(".");
+        var spatie = email.indexOf(" ");
+        if ((at == -1) || (punt == -1) || spatie != -1) {
+            document.write("Dit lijkt geen correct email adres te zijn!");
+        } else if (email.substring(0, at).length < 3) {
+            document.write("Er moeten minstens 2 tekens voor de @ staan");
+        } else {
+            document.write("Ziet er goed uit!");
+        }
+    }
+    </script>
+</head>
+
+<body>
+</body>
+
+</html>
