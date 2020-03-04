@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+}
+
+.wrapper {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.content {
+    padding: 2%;
+}
+
+.flex {
+    width: 100%;
+    display: flex;
+}
+
+.col-2 {
+    flex: 1 1 20%;
+    background-color: ;
+}
+
+.col-3 {
+    flex: 1 1 calc(100%/3);
+    background-color: ;
+}
+
+.col-4 {
+    flex: 1 1 40%;
+    background-color: ;
+}
+
+.col-8 {
+    flex: 1 1 80%;
+    background-color: ;
+}
