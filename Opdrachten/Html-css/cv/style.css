@@ -1,3 +1,5 @@
+/*General*/
+
 * {
     margin: 0;
     padding: 0;
@@ -9,13 +11,27 @@ body {
 }
 
 .wrapper {
-    width: 70%;
+    width: 5 0%;
     margin: 0 auto;
 }
 
 .content {
     padding: 2%;
 }
+
+
+/*borders*/
+
+.borderLeft {
+    border-left: 2px solid black;
+}
+
+.borderRight {
+    border-right: 2px solid black;
+}
+
+
+/* Flex*/
 
 .flex {
     width: 100%;
@@ -24,12 +40,12 @@ body {
 
 .col-2 {
     flex: 1 1 20%;
-    background-color: ;
+    background-color: grey;
 }
 
 .col-3 {
     flex: 1 1 calc(100%/3);
-    background-color: ;
+    background-color: darkgrey;
 }
 
 .col-4 {
@@ -39,5 +55,17 @@ body {
 
 .col-8 {
     flex: 1 1 80%;
-    background-color: ;
+    background-color: lightgrey;
+}
+
+
+/*Header*/
+
+header {
+    background-color: rgb(0, 0, 0, 0.8);
+}
+
+section {
+    color: aliceblue;
+    background-color: rgb(0, 0, 0, 0.9);
 }

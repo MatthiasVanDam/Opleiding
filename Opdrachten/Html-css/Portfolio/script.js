@@ -1,3 +1,5 @@
+/*PARALLAX*/
+
 $(window).scroll(function() {
     parallax();
 });
