@@ -121,7 +121,8 @@
         <p>dit document is een lang document en vervangt die door het nieuwewoord</p>
         <input type="text" name="zoek" value="" />
         <input type="text" name="vervang" />
-        <input type="button" name="button" value=" Vervang" onclick="vervangen(doc,document.form.zoek.value, document.form.vervang.value);" />
+        <input type="button" name="button" value=" Vervang"
+            onclick="vervangen(doc,document.form.zoek.value, document.form.vervang.value);" />
     </form>
     <script>
         ////////////////////////////////////////////////////////////////////
@@ -142,7 +143,6 @@
 
 
             } else {
-                form.onload();
 
                 document.write('Geef een woord of letter in uit de text dat je wilt vervangen')
 
