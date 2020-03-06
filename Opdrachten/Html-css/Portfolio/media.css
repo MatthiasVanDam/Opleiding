@@ -30,16 +30,17 @@
         bottom: 0;
     }
     nav .container {
-        padding-top: 2%;
+        padding: 0;
         margin-bottom: 2%;
     }
     nav .navBar a,
     nav i {
-        width: 50px;
+        
+        width: 70px;
         font-size: 0.7rem;
     }
     body {
-        margin-bottom: 15%;
+        margin-bottom: 10%;
     }
 }
 
@@ -56,5 +57,14 @@
     .container {
         width: 90vw;
         padding: 20px;
+    }
+}
+
+@media screen and (max-width:400px) {
+    nav .navBar a,
+    nav i {
+        
+        width: 50px;
+        font-size: 0.6rem;
     }
 }
