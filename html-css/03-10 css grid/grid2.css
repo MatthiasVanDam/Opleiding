@@ -1,49 +1,41 @@
-.grid{
-    width:80%;
+.grid {
+    width: 80%;
     min-width: 100vh;
     border: 1px solid red;
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 2fr;
     grid-row: 100px 1fr 100px;
-    grid-template-areas: 
-    "header header"
-    "aside main"
-    "footer footer";
+    grid-template-areas: "header header" "aside main" "footer footer";
 }
 
-
-
-header{
+header {
     background-color: grey;
     padding: 1rem;
     grid-area: header;
 }
 
-main{
+main {
     background-color: darkgrey;
     padding: 1rem;
     grid-area: main;
 }
 
-aside{
+aside {
     background-color: lightgray;
     padding: 1rem;
     grid-area: aside;
 }
 
-footer{
+footer {
     background-color: red;
     padding: 1rem;
     grid-area: footer;
-
 }
 
-@media screen and (max-width:800px){
-body{
-    background-color: darkcyan;
-}
-.grid{
-
-}
+@media screen and (max-width:800px) {
+    body {
+        background-color: darkcyan;
+    }
+    .grid {}
 }
