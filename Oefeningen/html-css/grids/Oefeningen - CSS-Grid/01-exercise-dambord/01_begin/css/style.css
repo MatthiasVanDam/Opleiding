@@ -1,0 +1,30 @@
+
+body{
+    background-color: grey;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.grid{
+    padding: 10px;
+    background-color: darkgoldenrod;
+    border: 2px solid black;
+    width: 90vw;
+    height: 90vh;
+    /* Write your Grid-code here */
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-gap: 10px;
+
+}
+
+div.black{
+    background-color: black;
+}
+
+div.white{
+    background-color: white;
+}

@@ -1,0 +1,63 @@
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+
+body{
+    padding-top: 10vh;
+    background-color: rgb(104, 97, 97)
+}
+
+/* When Grid isn't supported use following steps: */
+.grid-gallery{
+    width: 688px;
+    padding: 10px;
+    background-color: rgb(238, 238, 238);
+    margin: 0 auto;
+}
+
+.grid-gallery-item{
+padding: 0;
+margin: 10px;
+height: 100px;
+width: 200px;
+max-width: 200px;
+display: inline-block;
+background-image: url('img/cat.jpg');
+background-size: cover;
+}
+
+.kitten{
+    background-image: url('img/kitten.jpg');    
+}
+
+.red{
+    background-image: url('img/red.jpg');
+}
+
+.white{
+    background-image: url('img/white.jpg');    
+}
+
+
+/* When CSS Grid IS supported, do this:; */
+
+@supports ((display: -ms-grid) or (display: grid)) {
+    
+    .grid-gallery{
+		/* Your code goes here */
+
+    }
+    .grid-gallery .grid-gallery-item:nth-child(3){
+        border: 1px solid red;
+		/* Your code goes here */
+
+        height: auto;
+        background-position: center right;
+    }
+
+    .grid-gallery .grid-gallery-item:nth-child(4){
+        border: 1px solid green;
+		/* Your code goes here */
+
+    }    
+}

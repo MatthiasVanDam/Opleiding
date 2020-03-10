@@ -1,0 +1,198 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.img-responsive {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Colors */
+body {
+  background-color: rgb(97, 94, 94);
+  color: #333;
+  font-family: 'Lato', sans-serif;
+}
+
+.grid {
+  margin: 0 auto;
+  margin-top: 40px;
+  display: grid;
+  width: 600px;
+  height: 800px;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(7, 1fr);
+}
+
+.blauw {
+  background-color: #3798d3;
+}
+
+.welkom {
+  padding: 10px;
+  text-align: center;
+  color: #fff;
+  background-color: #28b060;
+  grid-column: 2 / 6;
+}
+
+.foto-ridder {
+  background-image: url(../img/ridder.png);
+  background-size: cover;
+  grid-row: 1 / 3;
+  grid-column: 6 / 7;
+}
+
+.logo {
+  background-color: #572381;
+  grid-row: 2 / 3;
+  grid-column: 1 / 6;
+}
+
+.logo img {
+  margin: 0 auto;
+  max-height: 100px;
+}
+
+.foto {
+  background-image: url(../img/Muiderslot.jpg);
+  background-size: cover;
+  grid-row: 3 / 4;
+  grid-column: 1 / 3;
+}
+
+.omschrijving {
+  padding: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: #c81f56;
+  grid-row: 3 / 4;
+  grid-column: 3 / 7;
+  color: white;
+  font-size: 10px;
+}
+
+.omschrijving ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.omschrijving ul li {
+  flex: 50%;
+  padding: 5px;
+  list-style-type: none;
+}
+
+.omschrijving ul li:before {
+  /*Using a Bootstrap glyphicon as the bullet point*/
+  content: "\e080";
+  font-family: 'Glyphicons Halflings';
+  font-size: 12px;
+  float: left;
+  margin-top: 4px;
+  margin-left: -17px;
+  width: 20px;
+  height: 20px;
+}
+
+.interieur {
+  background-image: url(../img/interieur.jpg);
+  background-size: cover;
+  grid-row: 4 / 5;
+  grid-column: 1 / 2;
+}
+
+.welcome {
+  padding: 10px;
+  text-align: center;
+  color: #fff;
+  background-color: #28b060;
+  grid-row: 4 / 5;
+  grid-column: 2 / 6;
+}
+
+.welcome h1 {
+  font-size: 18px;
+}
+
+.valkenier {
+  background-image: url(../img/valkenier.jpg);
+  background-size: cover;
+  grid-column: 6 / 7;
+  /* kolom */
+  grid-row: 4 / 5;
+  /* rij */
+}
+
+.geel {
+  background-color: #f8cd39;
+  grid-column: 1 / 2;
+  /* kolom */
+  grid-row: 5 / 6;
+  /* rij */
+}
+
+.description {
+  background-color: #c81f56;
+  padding: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+  grid-row: 5 / 7;
+  grid-column: 2 / 7;
+  color: white;
+  font-size: 10px;
+}
+
+.description ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.description ul li {
+  flex: 50%;
+  padding: 5px;
+}
+
+.description ul li:before {
+  /*Using a Bootstrap glyphicon as the bullet point*/
+  content: "\e080";
+  font-family: 'Glyphicons Halflings';
+  font-size: 12px;
+  float: left;
+  margin-top: 4px;
+  margin-left: -17px;
+  width: 20px;
+  height: 20px;
+}
+
+.tuin {
+  background-image: url(../img/tuin.jpg);
+  background-size: cover;
+  background-position: center center;
+  grid-row: 6 / 8;
+  grid-column: 1 / 2;
+}
+
+.url {
+  background-color: #572381;
+  grid-row: 7 / 8;
+  grid-column: 2 / 7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.url a {
+  text-decoration: none;
+}
+
+.url h3 {
+  color: #fff;
+}
