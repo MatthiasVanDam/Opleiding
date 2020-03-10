@@ -1,0 +1,26 @@
+.grid{
+    width:80%;
+    border: 1px solid red;
+    margin: 0 auto;
+    display: grid;
+}
+
+header{
+    background-color: grey;
+
+}
+
+main{
+    background-color: darkgrey;
+
+}
+
+aside{
+    background-color: lightgray;
+
+}
+
+footer{
+    background-color: red;
+
+

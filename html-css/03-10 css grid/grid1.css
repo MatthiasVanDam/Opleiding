@@ -1,0 +1,30 @@
+header,aside,main,footer{
+    text-align: center; 
+    padding: 2rem;
+}
+
+body{
+    display: grid;
+    grid-template-columns:1fr 5fr 1fr;
+    grid-gap: 1vw;
+}
+
+header{
+    background-color: grey;
+    grid-column: 1/-1;
+}
+
+main{
+    background-color: darkgrey;
+    grid-column: 3/-1;
+}
+
+aside{
+    background-color: lightgray;
+
+}
+
+footer{
+    background-color: red;
+    grid-column: 1/-1;
+}
