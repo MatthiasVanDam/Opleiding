@@ -1,10 +1,307 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 1.8vh;
+    box-sizing: border-box;
+    font-family: 'Raleway', 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+*:focus {
+    outline: none;
+}
+
+html {
+    background-color: grey;
+}
+
+
+/*TEXT*/
+
+h2 {
+    font-size: 2vh;
+    text-transform: uppercase;
+}
+
+p {
+    line-height: 1.5rem;
+}
+
+
+/* Flex*/
+
+.flex {
+    width: 100%;
+    display: flex;
+}
+
+.col {
+    flex-direction: column;
+}
+
+.centerItems {
+    align-items: center;
+}
+
+.j-c {
+    justify-content: center;
+}
+
+.s-a {
+    justify-content: space-around;
+}
+
+.s-b {
+    justify-content: space-between;
+}
+
+.col-1 {
+    flex: 1 1 10%;
+}
+
+.col-2 {
+    flex: 1 1 20%;
+}
+
+.col-3 {
+    flex: 1 1 calc(100%/3);
+}
+
+.col-4 {
+    flex: 1 1 40%;
+}
+
+.col-5 {
+    flex: 1 1 50%;
+}
+
+.col-8 {
+    flex: 1 1 80%;
+}
+
+.col-9 {
+    flex: 1 1 90%;
+}
+
+
+/*IMG*/
+
+.img-fluid {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+
+/*BODY+GRID*/
+
 body {
-    width: 80%;
-    min-width: 100vh;
-    border: 1px solid red;
+    width: 70%;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: ;
-    grid-row: ;
-    grid-template-areas: "nav" "" "info" "" "footer footer footer";
+    grid-column-gap: 20px;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(7, auto);
+}
+
+
+/*SLIDE*/
+
+.sides {
+    padding: 60px 40px;
+}
+
+
+/*NAV*/
+
+nav {
+    background-color: white;
+    padding: 0 40px;
+    grid-row: 1;
+    border-top: 5px solid black;
+}
+
+.logo {
+    width: 30%;
+    margin: auto 0;
+}
+
+.navContainer {
+    width: 75%;
+}
+
+.searchBar {
+    margin-left: auto;
+    padding-bottom: 10px;
+}
+
+.navBar {
+    margin-left: auto;
+    padding: 30px 0;
+}
+
+.navBar a {
+    font-size: 2vh;
+    padding-left: 40px;
+    display: inline-block;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: grey;
+}
+
+nav a:hover {
+    color: black;
+}
+
+.searchBar input,
+.searchBar input[type=button] {
+    padding: 5px;
+    height: 3vh;
+    border: none;
+    background-color: lightgrey;
+    border-radius: 5px;
+    font-weight: bold;
+    vertical-align: middle;
+}
+
+input[type=button]:hover {
+    background-color: black;
+    color: lightgray;
+}
+
+.nav input[type=button]:hover {
+    background-color: black;
+    color: lightgray;
+}
+
+
+/*BANNER*/
+
+.banner {
+    grid-row: 2;
+    font-style: italic;
+    text-align: center;
+    font-size: 2.5vh;
+    padding: 25px 15%;
+    background-color: darkgray;
+}
+
+
+/*SLIDE*/
+
+.slide {
+    grid-row: 3;
+    background-color: black;
+    justify-content: flex-end;
+    align-items: flex-end;
+    background-image: url(https://placekitten.com/890/300);
+    background-size: cover;
+    min-height: 400px;
+    background-position: center;
+}
+
+
+/*INFO*/
+
+.info {
+    display: grid;
+    grid-column-gap: 40px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row: 4;
+    background-color: white;
+}
+
+.infoText {
+    padding-left: 10px;
+}
+
+.infoText h2 {
+    margin-top: 0;
+    margin-bottom: 7%;
+}
+
+
+/*CARDS*/
+
+.card {
+    grid-row: 5;
+    display: grid;
+    grid-column-gap: 40px;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: darkgray;
+}
+
+.cardCont {
+    background-color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.card h2 {
+    margin: 8% 0;
+}
+
+
+/*CONTACT*/
+
+.contact {
+    display: grid;
+    grid-column-gap: 60px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-row: 6;
+    background-color: white;
+    color: grey;
+    border-radius: 5px;
+}
+
+.contact h2 {
+    margin-top: 0;
+    margin-bottom: 10%;
+}
+
+.contact ul li {
+    list-style-type: none;
+}
+
+.contact hr {
+    border: 2px dashed grey;
+    -webkit-border-bottom: 2xp dotted grey;
+    -moz--webkit-border-bottom: 2xp dotted grey;
+    margin: 5px 0 10px 0;
+}
+
+.contact a {
+    text-decoration: none;
+    display: inline-block;
+    color: black;
+}
+
+.contact a:hover {
+    color: gray;
+    letter-spacing: 2px;
+}
+
+.contact input {
+    margin-bottom: 5%;
+    padding: 5px;
+    height: 30px;
+    width: 100%;
+    border: none;
+    background-color: lightgrey;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.contact input[type=button]:hover {
+    background-color: black;
+    color: lightgray;
+}
+
+
+/*FOOTER*/
+
+footer {
+    padding: 20px 40px;
+    background-color: rgb(39, 39, 39);
+    color: white;
+    grid-row: 7;
 }
