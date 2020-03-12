@@ -1,4 +1,4 @@
-@media screen and (max-width: 1500px) {
+@media screen and (max-width: 1650px) {
     .navBar a {
         padding-left: 10px;
     }
@@ -11,6 +11,12 @@
     body {
         width: 100%
     }
+
+    .navContainer{
+        display: none;
+        display: ;
+    }
+
     .info h2 {
         margin-bottom: 3%;
     }

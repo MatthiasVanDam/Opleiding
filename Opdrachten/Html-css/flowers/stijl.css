@@ -130,14 +130,12 @@ nav {
     width: 75%;
 }
 
-.searchBar {
-    margin-left: auto;
-    padding-bottom: 10px;
-}
+
 
 .navBar {
     margin-left: auto;
     padding: 30px 0;
+    
 }
 
 .navBar a {
@@ -152,17 +150,31 @@ nav a:hover {
     color: black;
 }
 
-.searchBar input,
-.searchBar input[type=button] {
-    padding: 5px;
-    height: 3vh;
+.searchBar {
+    background-color: lightgrey;
+    margin-left: auto;
+    margin-bottom: 10px;
+    padding: 3px;
+    border: none;
+    border-radius: 4px;
+}
+.searchBar input[type=text]{
+    padding:  0 5px;
+    height: 2vh;
     border: none;
     background-color: lightgrey;
-    border-radius: 5px;
+  
     font-weight: bold;
     vertical-align: middle;
 }
-
+input[type=button] {
+  
+    border: none;
+    background-color: white;
+    border-radius: 100%;
+    font-weight: bold;
+    vertical-align: middle;
+}
 input[type=button]:hover {
     background-color: black;
     color: lightgray;
@@ -176,11 +188,11 @@ input[type=button]:hover {
 
 /*BANNER*/
 
-.banner {
+* .banner {
     grid-row: 2;
     font-style: italic;
     text-align: center;
-    font-size: 2.5vh;
+    font-size: 5vh !important;
     padding: 25px 15%;
     background-color: darkgray;
 }
