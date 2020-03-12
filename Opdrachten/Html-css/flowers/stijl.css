@@ -23,7 +23,6 @@ h2 {
 }
 
 p {
-    line-height: 1.5rem;
     margin-bottom: 0;
 }
 
@@ -130,12 +129,9 @@ nav {
     width: 75%;
 }
 
-
-
 .navBar {
     margin-left: auto;
     padding: 30px 0;
-    
 }
 
 .navBar a {
@@ -158,23 +154,23 @@ nav a:hover {
     border: none;
     border-radius: 4px;
 }
-.searchBar input[type=text]{
-    padding:  0 5px;
-    height: 2vh;
+
+.searchBar input[type=text] {
     border: none;
     background-color: lightgrey;
-  
     font-weight: bold;
     vertical-align: middle;
 }
-input[type=button] {
-  
+
+.searchBar button {
+    width: 25px;
+    height: 25px;
     border: none;
     background-color: white;
     border-radius: 100%;
     font-weight: bold;
-    vertical-align: middle;
 }
+
 input[type=button]:hover {
     background-color: black;
     color: lightgray;
@@ -188,13 +184,16 @@ input[type=button]:hover {
 
 /*BANNER*/
 
-* .banner {
+.banner {
     grid-row: 2;
     font-style: italic;
     text-align: center;
-    font-size: 5vh !important;
     padding: 25px 15%;
     background-color: darkgray;
+}
+
+body .banner p {
+    font-size: 1.9vh;
 }
 
 
@@ -223,6 +222,8 @@ input[type=button]:hover {
 }
 
 .infoText {
+    flex: 1 1 80%;
+    text-align: justify;
     padding-left: 10px;
 }
 

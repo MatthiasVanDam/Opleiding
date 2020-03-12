@@ -11,12 +11,10 @@
     body {
         width: 100%
     }
-
-    .navContainer{
+    .navContainer {
         display: none;
         display: ;
     }
-
     .info h2 {
         margin-bottom: 3%;
     }
@@ -49,7 +47,8 @@
         grid-gap: 0;
     }
     .infoCont {
-        margin-bottom: 20px;
+        width: 50%;
+        margin: 0 auto 20px auto;
     }
     .card {
         grid-template-columns: 1fr;
@@ -64,5 +63,11 @@
     }
     .contactCont {
         margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .infoCont {
+        width: 80%;
     }
 }
