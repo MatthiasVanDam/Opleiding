@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Remove</title>
+    <style type="text/css">
+        table {
+            width: 500px;
+            text-align: left;
+        }
+
+        tr {
+            border: 1px solid #CCC;
+        }
+
+        th {
+            background-color: red;
+            color: #FFF;
+            padding: 15px 10px;
+        }
+
+        td {
+            padding: 10px;
+        }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("tr td a").click(function () {
+                /* Verwijder de rij */
+                $(this).parent().parent().remove();
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <th>Titel van de film</th>
+            <th>Kost</th>
+            <th>Opties</th>
+        </tr>
+        <tr>
+            <td>Pirates of the Caribbean: At World's End</td>
+            <td>$300</td>
+            <td><a href="#">verwijderen</a></td>
+        </tr>
+        <tr>
+            <td>Tangled</td>
+            <td>$260</td>
+            <td><a href="#">verwijderen</a></td>
+        </tr>
+        <tr>
+            <td>Spider-Man 3</td>
+            <td>$258</td>
+            <td><a href="#">verwijderen</a></td>
+        </tr>
+        <tr>
+            <td>John Carter</td>
+            <td>$250</td>
+            <td><a href="#">verwijderen</a></td>
+        </tr>
+        <tr>
+            <td>Harry Potter and the Half-Blood Prince</td>
+            <td>$250</td>
+            <td><a href="#">verwijderen</a></td>
+        </tr>
+        <tr>
+            <td>Avatar</td>
+            <td>$237</td>
+            <td><a href="#">verwijderen</a></td>
+        </tr>
+        <tr>
+            <td>The Dark Knight Rises</td>
+            <td>$230</td>
+            <td><a href="#">verwijderen</a></td>
+        </tr>
+        <tr>
+            <td>The Chronicles of Narnia: Prince Caspian</td>
+            <td>$225</td>
+            <td><a href="#">verwijderen</a></td>
+        </tr>
+        <tr>
+            <td>Pirates of the Caribbean: Dead Man's Chest</td>
+            <td>$225</td>
+            <td><a href="#">verwijderen</a></td>
+        </tr>
+        <tr>
+            <td>The Avengers</td>
+            <td>$220</td>
+            <td><a href="#">verwijderen</a></td>
+        </tr>
+    </table>
+</body>
+
+</html>

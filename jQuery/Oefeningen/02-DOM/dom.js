@@ -1,0 +1,1 @@
+$('h1').text('bier is ook lekker');
